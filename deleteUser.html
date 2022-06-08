@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>deleteUser</title>
+    <link rel="stylesheet" href="style/styleNewUser.css">
+    <script src="js_casino.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <img src="logo.png" id="logo">
+        <nav>
+            <ol>
+            <li><button class="boton"><a href="SlotGame.html">Tragaperras</a></button></li>
+            <li><button class="boton"><a href="Ruleta.html">Ruleta</a></button></li>
+            <li><button class="boton"><a href="BlackJack.html">BlackJack</a></button></li>
+        </ol>
+        </nav>
+    <div>
+        <p>Ingresa el DNI y la contraseña de la cuenta que deseas borrar</p>
+        <input type="text" name="DNI" id="deleteId" minlength="8" maxlength="12" placeholder="Ingresa tu DNI">
+        <input type="password" name="password" id="deletePassword" minlength="8" maxlength="16" placeholder="Ingresa tu password">
+        
+    </div>
+    <button onclick="deleteUser()">Borrar</button>
+    <div>
+        <p id="Msg">USUARIO BORRADO CON ÉXITO!</p>
+    </div>
+</body>
+
+</html>

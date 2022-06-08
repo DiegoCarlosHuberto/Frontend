@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Casino</title>
+        <link rel="stylesheet" href="style/stylesheet.css">
+        <script src="js_casino.js"></script>
+      
+    </head>
+    <body onload="loged()">
+
+        <header id="header">
+            <img src="logo.png" id="logo">
+            <nav>
+                <ol>
+                    <li><button class="button"><a href="SlotGame.html">Tragaperras</a></button></li>
+                    <li><button class="button"><a href="Ruleta.html">Ruleta</a></button></li>
+                    <li><button class="button"><a href="BlackJack.html">BlackJack</a></button></li>
+                    <li><button class="button" onclick="logOut()" id="desc">Desconectarse</button></li>
+                </ol>
+            </nav>
+            <div id="login">
+                <p></p>
+                <button class="button"><a href="Index.html">Inicia sesión</a></button> Ó <a href="newUser.html">Regístrate</a>
+            </div>
+        </header>
+        
+        <div id="user"></div><br><br>
+        <div id="main">
+            <section class="reel1">
+                <img class="slot" id="num1" src="Images/incognita.png">
+                <img class="slot" id="num4" src="Images/incognita.png">
+                <img class="slot" id="num7" src="Images/incognita.png">
+            </section>
+            
+            <section class="reel2">
+                <img class="slot" id="num2" src="Images/incognita.png">
+                <img class="slot" id="num5" src="Images/incognita.png">
+                <img class="slot" id="num8" src="Images/incognita.png">
+            </section>
+            <section class="reel3">
+                <img class="slot" id="num3" src="Images/incognita.png">
+                <img class="slot" id="num6" src="Images/incognita.png">
+                <img class="slot" id="num9" src="Images/incognita.png">
+            </section>
+        </div>
+        
+        <div id="reward">
+            <div id="text" class="rewtext">HAS GANADO: </div>
+            <div class="rewtext">
+                <button id="spin" class="button" onclick="slot()" disabled>GIRAR</button>
+            </div>
+        </div>
+        <div id="bet">
+            Introduce tu apuesta: <input type="number" name="bet" id="betbox" step="0.01" min="0.01" max="100">
+            <button class="button" onclick="bet()">APOSTAR</button>
+        </div>
+        
+    </body>
+    <footer><a href="deleteUser.html">Eliminar usuario</a></footer>
+</html>

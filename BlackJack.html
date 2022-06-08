@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Jack</title>
+    <link rel="stylesheet" href="style/estilo.css">
+</head>
+
+<body onload="loged()">
+    <header id="header">
+        <img src="logo.png" id="logo">
+        <nav>
+            <ol>
+                <li><button class="boton"><a href="SlotGame.html">Tragaperras</a></button></li>
+                <li><button class="boton"><a href="Ruleta.html">Ruleta</a></button></li>
+                <li><button class="boton"><a href="BlackJack.html">BlackJack</a></button></li>
+                <li><button class="boton" onclick="logOut()" id="desc">Desconectarse</button></li>
+            </ol>
+        </nav>
+        <div id="login">
+            <p></p>
+            <button class="boton"><a href="Index.html">Inicia sesión</a></button> Ó <a href="newUser.html">Regístrate</a>
+        </div>
+    </header>
+    <main>
+        <section id="sect1">
+            <br>
+
+        </section>
+        <p>---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        </p>
+        <section id="sect2">
+            <button onclick="Jugar()" id="jugar" class="boton">Jugar</button>
+            <button onclick="Pedir()" id="pedir" class="boton">Pedir carta</button>
+            <button onclick="Plantarse()" id="plantarse" class="boton">Plantarse</button>
+            <input type="number" placeholder="Introduzca apuesta" id="apuesta" step="0.05">
+            <button onclick="Apostar()" id="apostar" class="boton">Apostar</button>
+            <button onclick="ReJugar()" id="rejugar" class="boton">Volver a jugar</button>
+
+        </section>
+    </main>
+    <footer><a href="deleteUser.html">Eliminar usuario</a></footer>
+    <script src="js_casino.js"></script>
+</body>
+
+</html>

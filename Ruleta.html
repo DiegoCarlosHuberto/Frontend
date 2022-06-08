@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Casino</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <script src="js_casino.js"></script>
+  </head>
+
+  <body onload="loged()">
+      <header id="header">
+        <img src="Images/logo.png" id="logo">
+        <nav>
+            <ol>
+                <li><button class="button"><a href="SlotGame.html">Tragaperras</a></button></li>
+                <li><button class="button"><a href="Ruleta.html">Ruleta</a></button></li>
+                <li><button class="button"><a href="BlackJack.html">BlackJack</a></button></li>
+                <li><button class="button" onclick="logOut()" id="desc">Desconectarse</button></li>
+            </ol>
+        </nav>
+        <div id="login">
+            <p></p>
+            <button class="button"><a href="Index.html">Inicia sesión</a></button> Ó <a href="newUser.html">Regístrate</a>
+        </div>
+    </header>
+    <div class="tapete" id="tapete">
+      <div class="ruleta" id="ruleta">
+        <div id="iz">
+          <img
+            class="ruleta"
+            id="ruleta_gif"
+            src="https://i.pinimg.com/originals/30/16/25/30162543258ca8058fe7bc4003be2a33.gif"
+          />
+          <img
+            id="grupos"
+            src="https://mundoruleta.es/wp-content/uploads/racetrack.jpg"
+          />
+        </div>
+
+        <div id="der">
+          <div id="form">
+            <div id="formApuesta">
+              <label>Numero al pleno</label>
+              <input id="numbers" name="nums" /><br />
+              <label>Cantidad apostada para cada numero</label>
+              <input id="moneyNum" name="moneyN" /><br />
+              <label>Grupos para apostar: </label>
+              <label>Vecinos, huerfanos, tercio</label>
+              <input id="groups" name="groups" /><br />
+              <label>Cantidad apostada para cada grupo</label>
+              <input id="moneyGroup" name="moneyG" /><br />
+              <label>Color: Rojo, negro</label>
+              <input id="color" name="colorA" /><br />
+              <label>Cantidad apostada al color</label>
+              <input id="moneyColor" name="moneyColorA" /><br />
+            </div>
+          </div>
+          <div class="botonera">
+            <button class="botonesApuesta" id="checkCredito" onclick="betR()">
+              Check Apuesta
+            </button>
+            <button class="botonesApuesta" id="apostar" onclick="ApostarR()">
+              Apostar
+            </button>
+            <button
+              class="botonesApuesta"
+              id="nuevaApuesta"
+              onclick="document.location.reload(true)"
+            >
+              Nueva Apuesta
+            </button>
+          </div>
+
+          <div id="resultado" class="num-prime">
+            <div id="numberW">El numero ha sido:</div>
+            <div id="grupoW">Grupo Ganador:</div>
+            <div id="colorW">El color ha sido:</div>
+            <div id="prime">Has ganado:</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer><a href="deleteUser.html">Eliminar usuario</a></footer>
+</html>

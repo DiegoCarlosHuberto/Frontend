@@ -1,0 +1,43 @@
+.slot{
+    
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 100px;
+    width: 100px;
+    
+}
+
+.reel1{
+    
+    margin-right: 15%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.reel2{
+    
+    
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.reel3{
+    
+    
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#main{
+
+    display: flex;
+    border: 3px;
+    border-style: solid;
+    border-color: white;
+    margin-left: 30%;
+    margin-right: 30%;
+}
